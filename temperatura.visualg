@@ -1,0 +1,33 @@
+algoritmo "temperatura"
+
+var
+  temperaturaf, temperaturc, convf, convc: real
+  temp: caractere
+
+inicio
+
+  escreval("Voce vai digitar a temperatura em qual escala (C/F)? ")
+  leia(temp)
+
+  se (temp = "c") entao
+    escreval("Digite a temperatura em Celsius")
+    leia(temperaturc)
+      senao se (temp = "f") entao
+        escreval("Digite a temperatura em Fahrenheit: ")
+        leia(temperaturaf)
+      fimse
+  fimse
+
+  convf <- (temperaturaf - 32) * 5 / 9
+  convc <- temperaturc * 9 / 5 + 32
+
+  se (temp = "f") entao
+    escreval("Temperatura equivalente em Celsius: ", convf:2:2)
+      senao se (temp = "c") entao
+        escreval("Temperatura equivalente em Celsius: ", convc:2:2)
+      fimse
+  fimse
+  
+
+
+fimalgoritmo

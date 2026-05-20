@@ -1,0 +1,22 @@
+algoritmo "medidas"
+
+var
+  
+  a, b, c: real
+
+inicio
+
+ escreval("Digite a medida A: ")
+ leia(a)
+ escreval("Digite a medida B: ")
+ leia(b)
+ escreval("Digite a medida C: ")
+ leia(c)
+
+ escreval("Area do quadrado = ", exp(a, 2):3:4)
+ escreval("Area do triangulo = ", b+b:2:4)
+ escreval("Area do trapézio = ", (a + b) * c / 2 :3:4)
+
+
+
+fimalgoritmo

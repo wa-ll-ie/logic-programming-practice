@@ -1,0 +1,30 @@
+algoritmo "menor_de_tres"
+
+var
+
+  a, b, c, menor: real
+
+inicio
+
+ escreval("Primivero valor: ")
+ leia(a)
+ escreval("Segundo valor: ")
+ leia(b)
+ escreval("Terceiro valor: ")
+ leia(c)
+
+ se (a < b) e (a < b) entao
+  menor <- a
+ senao
+  se (b < c) entao
+   menor <- b
+  senao
+   menor <- c
+  fimse   
+ fimse 
+
+  escreval("MENOR = " menor)
+  
+fimalgoritmo
+
+

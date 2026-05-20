@@ -1,0 +1,21 @@
+algoritmo "consumo"
+
+var
+  
+  dp: inteiro
+  cg: real
+  consumo: real
+
+inicio
+
+  escreval("Distancia percorrida: ")
+  leia(dp)
+  escreva("Combustivel gasto: ")
+  leia(cg)
+
+  consumo <- dp / cg
+
+  escreval("Consumo médio = " consumo:3:3)
+
+
+fimalgoritmo

@@ -1,0 +1,21 @@
+algoritmo "locadora"
+
+var
+  
+ filme1, filme2, filme3: real
+
+inicio
+
+  escreval("Digite o valor dos filmes: ")
+  leia(filme1)
+  leia(filme2)
+  leia(filme3)
+
+  se (filme1 > filme2) ou (filme1 + filme2 >= 30) entao
+    filme3 <- filme3 - (filme3 * 0.2)
+    escreval("Você ganhou uma promoção mo filme 3 de : ", filme3)
+  senao
+    escreval("Sem promoção! Compre um filme mais caro.")  
+  fimse
+
+fimalgoritmo

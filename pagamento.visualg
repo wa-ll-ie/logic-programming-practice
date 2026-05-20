@@ -1,0 +1,22 @@
+algoritmo "circulo"
+
+var
+ 
+ nome:caractere
+ vph: real
+ ht: inteiro
+
+inicio
+
+  escreval("Nome: ")
+  leia(nome)
+  escreval("Valor por Hora: ")
+  leia(vph)
+  escreval("Horas Trabalhadas: ")
+  leia(ht)
+
+  escreva("O pagamento para ", nome, " Deve ser de ", vph * ht:5:2)
+
+  
+
+fimalgoritmo

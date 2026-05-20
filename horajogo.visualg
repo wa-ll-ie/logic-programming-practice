@@ -1,0 +1,23 @@
+algoritmo "tempo_de_jogo"
+
+var
+
+  horaDia, horaJogo, duracao: inteiro
+
+inicio
+
+  escreval("Hora Inicial: ")
+  leia(horaDia)
+  escreval("Hora final: ")
+  leia(horaJogo)
+
+  se (horaJogo > horaDia) entao
+    duracao <- horaJogo - horaDia
+    escreval("O jogo durou: ", duracao, " Hora(s)")  
+  senao
+    duracao <- (horaJogo - horaDia) + 24
+    escreval("O jogo durou: ", duracao, " Hora(s)")  
+  fimse
+
+
+fimalgoritmo

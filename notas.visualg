@@ -1,0 +1,23 @@
+algoritmo "notas"
+
+var
+  primeiroSemestre, segundoSemestre, notaFinal: real
+
+inicio
+
+  escreval("Digite a primeira nota: ")
+  leia(primeiroSemestre)
+  escreval("Digite a segunda nota: ")
+  leia(segundoSemestre)
+
+  notaFinal <- primeiroSemestre + segundoSemestre
+
+  se notaFinal < 60.0 entao
+    escreval("Nota final = ", notaFinal:2:1, " Reprovado")
+  senao
+    escreval("Nota final = ", notaFinal:2:1, " Aprovado!")
+  fimse
+
+fimalgoritmo
+
+

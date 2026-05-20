@@ -1,0 +1,22 @@
+algoritmo "operadora"
+
+var
+
+  minutos: inteiro
+  valor: real
+
+inicio
+
+  escreval("Digite a quantidade de minutos: ")
+  leia(minutos)
+
+  valor <- 50
+
+  se (minutos <= 100 ) entao
+    escreval("Valor a pagar: ", valor:2:2)
+  senao
+    se (minutos > 100) entao
+      escreval("Valor a pagar: ", valor + (minutos - 100) * 2:2:2)
+    fimse
+  fimse
+fimalgoritmo

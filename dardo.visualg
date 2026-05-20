@@ -1,0 +1,26 @@
+algoritmo "dardo"
+
+var
+
+a, b, c, maior: real
+
+inicio
+
+  escreval("Digite as tres distancias: ")
+  leia(a)
+  leia(b)
+  leia(c)
+
+  se (a > b) e (a > c) entao
+    maior <- a
+    escreval("MAIOR DISTANCIA = ", maior)
+      senao se (b > c) entao
+        maior <- b
+        escreval("MAIOR DISTANCIA = ", maior)
+        senao
+          maior <- c
+          escreval("MAIOR DISTANCIA = ", maior)  
+      fimse
+  fimse
+
+fimalgoritmo

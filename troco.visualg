@@ -1,0 +1,22 @@
+algoritmo "Primeiro Programa"
+
+var
+  precoProduto: real
+  comprada: inteiro
+  dinheiroRecebido: real
+  troco: real
+
+inicio
+
+    escreval("Preço unitario do produto: ")
+    leia(precoProduto)
+    escreval("Quantidade Comprada: ")
+    leia(comprada)
+    escreval("Dinheiro recebido: ")
+    leia(dinheiroRecebido)
+    
+    troco <- precoProduto * comprada - dinheiroRecebido
+
+    escreval("TROCO = ", troco)
+
+fimalgoritmo

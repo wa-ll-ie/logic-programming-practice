@@ -1,0 +1,22 @@
+algoritmo "terreno"
+
+var
+  largura, comprimento, metroQuadrado, area, preco: real
+
+inicio
+
+  escreval ("Digite a largura do terreno: ")
+  leia (largura)
+  escreval ("Digite o comprimento do terreno: ")
+  leia (comprimento)
+  escreval ("digite o valor do terreno: ")
+  leia (metroQuadrado)
+ 
+  area <- largura*comprimento
+  preco <- metroQuadrado*area
+
+  escreval ("Area do terreno = ", area:4:2)
+  
+  escreval ("Preço do terreno = ", preco:6:2)
+
+fimalgoritmo
